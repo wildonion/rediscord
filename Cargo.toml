@@ -1,0 +1,29 @@
+[package]
+name = "rediscord"
+version = "0.1.1"
+edition = "2021"
+authors = ["wildonion <abarmardeatashyne@gmail.com>"]
+description = "rediscord Bot"
+homepage = "https://github.com/wildonion/rediscord"
+keywords = ["game","web","app", "rust", "crypto"]
+license = "UNLICENSED"
+repository = "https://github.com/wildonion/rediscord"
+
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde_json = "1"
+serde = {version = "1", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+serenity = "0.11"
+pretty_env_logger = "0.4"
+dotenv = "0.15"
+redis = { version = "0.23.0", features = ["tokio-comp", "cluster-async", "json"] }
+futures = "0.3"
+futures-util = "0.3"
+log = "0.4"
+
+
+[[bin]]
+name = "rediscord"
+path = "src/bot.rs"
