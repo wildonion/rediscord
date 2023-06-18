@@ -49,5 +49,5 @@ sudo docker run -d --link redis --network gem --name rediscord -v $(pwd)/infra/d
 ### 🥧 Twiscord Architecture Diagram
 
 <p align="center">
-    <img src="https://github.com/wildonion/rediscord/rediscord.png">
+    <img src="https://github.com/wildonion/rediscord/blob/main/rediscord.png">
 </p>
