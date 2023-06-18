@@ -45,3 +45,9 @@ docker run -d \
 sudo docker build -t rediscord -f $(pwd)/infra/docker/rediscord/Dockerfile . --no-cache
 sudo docker run -d --link redis --network gem --name rediscord -v $(pwd)/infra/data/rediscord-logs/:/usr/src/app/logs/ rediscord
 ```
+
+### 🥧 Twiscord Architecture Diagram
+
+<p align="center">
+    <img src="https://github.com/wildonion/rediscord/rediscord.png">
+</p>
