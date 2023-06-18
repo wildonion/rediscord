@@ -23,7 +23,7 @@ in discord ws/http client
 
 Make sure that 
 
-- you've setup the token inside `.env` file already by building a new application for the this bot inside the discord developer panel.
+- you've setup the token inside `.env` file already by building a new application and inivitation link for the this bot inside the discord developer panel.
 
 - this bot and redis are in a same docker network.
 
