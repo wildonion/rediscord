@@ -23,9 +23,9 @@ in discord ws/http client
 
 Make sure that 
 
-- you've setup the token inside `.env` file already by building a new application and inivitation link for the this bot inside the discord developer panel.
+- you've setup the token and discord channel id inside `.env` file already by building a new application and inivitation link for the this bot inside the discord developer panel.
 
-- this bot and redis are in a same docker network.
+- this bot and redis must be in a same docker network.
 
 - you've setup the [twidis](https://github.com/wildonion/twidis) bot already in order to get this bot works.  
 
