@@ -50,7 +50,7 @@ docker run -d \
     --restart always \
     redis:latest /bin/sh -c 'redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}'
 
-sudo docker build -t rediscord -f $(pwd)/infra/docker/rediscord/Dockerfile . --no-cache
+sudo docker build -t rediscord -f Dockerfile . --no-cache
 sudo docker run -d --link redis --network gem --name rediscord -v $(pwd)/infra/data/rediscord-logs/:/usr/src/app/logs/ rediscord
 ```
 
